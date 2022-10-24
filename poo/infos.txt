@@ -1,0 +1,5 @@
+DIA - software para diagrama de classes 
+
+
+No terminal:
+python3 nome.py

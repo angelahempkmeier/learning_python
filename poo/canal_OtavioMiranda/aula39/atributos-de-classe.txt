@@ -1,0 +1,1 @@
+Quando a classe possui um atributo e você instancia objetos da classe, vc pode mudar esse atributo. Caso vc queira que todos os objetos tenham o atributo alterado, o ideal é fazer a própria classe modificar o atributo, como no exemplo do main.py

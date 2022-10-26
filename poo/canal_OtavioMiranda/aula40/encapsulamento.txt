@@ -1,0 +1,11 @@
+Python diverge bastante das outras linguagens no quesito de encapsulamento.
+
+Nas linguagens clássicas temos modificadores de acesso: public, private, protected. AO tentarmos acessar um atributo privado em outra classe, nada acontece, pois nem essa opção temos.
+No python: Quando modificamos um atributo da classe, toda a classe quebra, dá erro no terminal.
+Conveções no python:
+_ : se tiver um underline antes do nome no método init, _nome, recomenda-se que vc não acesse esse atributo. ou seja, vc tem um atributo privated ou proteced - só que de maneira mais fraca e sútil do que no java, por exemplo, pois vc ainda pode acessar esse atributo.
+__ : private com recomendacao FORTE que vc nao acesse o atributo! ele proíbe o acesso
+
+Quando eu tento acessar minha instancia e modificar o atributo com um underline na frente, ele quebra todo código e dá erro. Quando eu faço o mesmo, so que o atributo tendo dois underlines na frente, ele simplesmente cria outro atributo e não quebra o código.
+
+Possível acessar com getters! Possível setar com setter

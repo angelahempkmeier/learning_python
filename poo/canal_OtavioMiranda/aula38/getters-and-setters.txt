@@ -1,0 +1,24 @@
+#Getter
+    #decorador:
+    @property
+    def preco(self):
+        return self._preco
+        #por convenção, pega o nome da variável e coloca um _ na frente
+    
+    #Setter
+    @preco.setter #nome da variavel . setter
+    def preco(self, valor):
+        self._preco = valor
+
+
+    Situação:
+    O método para calculo de preço está esperando um número passado como o preço, porém, por algum motivo, foi passada uma string no lugar do número.
+    Arrumando:
+    #Setter
+    @preco.setter
+    def preco(self, valor):
+        if isinstance(valor, str):
+            valor = float(valor.replace('R$', ''))
+        self._preco = valor
+    
+    Dessa forma, o isinstance verifica se o valor faz parte de uma string, se sim, ele dá um replace no R$ por uma string vazia, mas, óbvio, continua sendo uma string. O que conserta de uma vez por todas isso é o casting feito.

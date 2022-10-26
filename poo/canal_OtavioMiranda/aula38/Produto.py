@@ -11,6 +11,10 @@ class Produto:
     @property
     def preco(self):
         return self._preco
+    
+    @property
+    def nome(self):
+        return self._nome
 
     #Setter
     @preco.setter
@@ -18,13 +22,16 @@ class Produto:
         if isinstance(valor, str):
             valor = float(valor.replace('R$', ''))
         self._preco = valor
-        
+    
+    @nome.setter
+    def nome(self, valor):
+        self._nome = valor.title()
         
 
-p1 = Produto('Camiseta', 50)
+p1 = Produto('CAMISETA', 50)
 p1.desconto(10)
-print(p1.preco)
+print(p1.nome, p1.preco)
 
-p2 = Produto('Caneca', 'R$15')
+p2 = Produto('CANECA', 'R$15')
 p2.desconto(10)
-print(p2.preco)
+print(p2.nome, p2.preco)

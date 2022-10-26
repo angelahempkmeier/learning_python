@@ -1,0 +1,10 @@
+Para fazer um método de classe:
+
+@classmethod
+def nome_aqui(cls):
+    #codigo
+
+Importante falar que cls se refere à classe trabalhada.
+
+Método de instância ou método de classe? 
+Pensar: o método que estou criando é relacionado à classe em geral ou à instância? No caso, ele é específico pra cada objeto?

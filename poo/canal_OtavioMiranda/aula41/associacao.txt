@@ -1,0 +1,8 @@
+Como associar classes:
+
+Classe Escritor e Caneta são independentes
+escritor e caneta são instâncias dessas classes, respectivamente
+ferramenta é um atributo de instância declarado no construtor do Escritor
+Na linha abaixo, a ferramenta está recebendo um objeto inteiro, que é a caneta. E ai, na linha abaixo desta, estamos pedindo pra ela escrever, que é um método que está dentro da caneta, que no caso, a ferramenta tem acesso pois SETAMOS isso!
+escritor.ferramenta = caneta
+escritor.ferramenta.escrever()

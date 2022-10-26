@@ -1,0 +1,6 @@
+Recebe um decorador:
+
+Não é necessário ter a instância (self como parâmetro) nem a classe (cls como parâmetro).
+@staticmethod
+
+O método pode ser chamado tanto pela classe quanto pela instância.
